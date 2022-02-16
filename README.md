@@ -20,5 +20,6 @@ Then type into your terminal:
 
 `git clone https://"Git Name"@github.com/JackZ-Twisted/Placement-Bank.git`
 
-You should now be connected to the repository
+You should now be connected to the repository. For helpful content on learning the basics of git see this tutorial here (~85m):
 
+https://www.youtube.com/playlistlist=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR
