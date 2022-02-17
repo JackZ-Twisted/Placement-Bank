@@ -46,6 +46,14 @@ def admin_signup():
 def signup_completion():
     return render_template('signup_completion.html')
 
+@app.route('/forgot_username')
+def forgot_username():
+    return render_template('forgot_username.html')
+
+@app.route('/forgot_password')
+def forgot_password():
+    return render_template('forgot_password.html')
+
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')

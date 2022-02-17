@@ -10,33 +10,51 @@
 </head>
 <body>
     {% block body %}
-    <div>
-        <h1>Placement Bank</h1>
-        <form method="POST">
-            <div>
-                {{form.hidden_tag()}}
-                {{form.Username.label}}
+    <div class="Page_Container_Div">
+        <div class="LoginForm_Padding">
+            <div class="LoginForm_Position">
+                <h1 id="Placement_Bank">Placement Bank</h1>
+                <form method="POST">
+                    <div class="User_Pass_Position">
+                        {{form.hidden_tag()}}
+                        <div class="User_Pass_Details">
+                            <div class="User_Pass_Label_Position"> {{form.Username.label}} </div>
+                            {{form.Username()}}
+                        </div>
                         <br>
-                {{form.Username()}}
-            </div>
-                        <br>
-             <div>
-                {{form.Password.label}}
-                        <br>
-                {{form.Password()}}
-            </div>
-                        <br>
-             <div>
-                {{form.Remember.label}}
-                {{form.Remember()}}
-            </div>
-                        <br>
-            <div>
-                {{form.Login()}}
-            </div>
-        </form>
-    </div>
+                        <div class="User_Pass_Details">
+                            <div class="User_Pass_Label_Position"> {{form.Password.label}} </div>
+                            {{form.Password()}}
+                        <div class="Employee_Login"> <a href="http://127.0.0.1:5000/">Login as Employee</a> </div>
+                        </div>
+                    </div>
+                    <br class="thickbr"><br>
+                     <div class="RememberMe_User_Pass_Links">
+                         <div class="RememberMe_Link">
+                            <div> {{form.Remember()}} </div>
+                            <div> {{form.Remember.label}} </div>
+                         </div>
+                         <div class="Forgot_User_Pass_Links">
+                            <a href="http://127.0.0.1:5000/" class="Login_Details_Links">Forgot Username?</a>
+                             <br class="thinbr">
+                            <a href="http://127.0.0.1:5000/" class="Login_Details_Links">Forgot Password?</a>
+                         </div>
+                    </div>
+                    <br class="thickbr"><br>
+                    <div>
+                        <div> {{form.Login()}} </div>
+                        <div class="Signup_Link"> <a href="http://127.0.0.1:5000/">Sign Up Here</a> <br> </div>
+                    </div>
 
+                    <div class="Social_Media_Links">
+                        <div> <a href=""> <img src="" alt=""> Instagram </a> </div>
+                        <div> <a href=""> <img src="" alt=""> TikTok </a> </div>
+                        <div> <a href=""> <img src="" alt=""> LinkedIn </a> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     {% endblock %}
 </body>
 </html>

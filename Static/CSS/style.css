@@ -1,0 +1,119 @@
+body {
+  min-height: 100vh;
+}
+
+br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 10px; /* change this to whatever height you want it */
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.thinbr {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 5px; /* change this to whatever height you want it */
+}
+
+.thickbr {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 20px; /* change this to whatever height you want it */
+}
+.Page_Container_Div {
+
+}
+.LoginForm_Padding {
+
+}
+.LoginForm_Position {
+  width: 320px;
+  padding: 40px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50% , -50%)
+
+}
+
+.User_Pass_Position {
+  text-align: left;
+  display: grid;
+  place-items:center;
+}
+
+.User_Pass_Label_Position {
+
+}
+
+.Employee_Login {
+  text-align: right;
+  font-size: 12px;
+}
+
+.RememberMe_User_Pass_Links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.RememberMe_Link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Forgot_User_Pass_Links {
+
+}
+
+.Social_Media_Links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.User_Pass_Details {
+  width: 100%;
+}
+
+.Login_Details_Links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Signup_Link {
+  text-align: right;
+  font-size: 12px;
+}
+
+#Username {
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+#Password {
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+#Login {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+}
+
+#Placement_Bank {
+    display: flex;
+    justify-content: center;
+}
