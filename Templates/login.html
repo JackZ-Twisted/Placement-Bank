@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'CSS/style.css')}}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    <div>
+        <h1>Placement Bank</h1>
+        <form method="POST">
+            <div>
+                {{form.hidden_tag()}}
+                {{form.Username.label}}
+                        <br>
+                {{form.Username()}}
+            </div>
+                        <br>
+             <div>
+                {{form.Password.label}}
+                        <br>
+                {{form.Password()}}
+            </div>
+                        <br>
+             <div>
+                {{form.Remember.label}}
+                {{form.Remember()}}
+            </div>
+                        <br>
+            <div>
+                {{form.Login()}}
+            </div>
+        </form>
+    </div>
+
+    {% endblock %}
+</body>
+</html>
